@@ -7,6 +7,22 @@ description: Analyze and optimize token usage with CompText V5.0. Use when measu
 
 Analyze token reduction statistics and optimize prompts for maximum compression using the CompText V5.0 ULTRA protocol.
 
+## Activation Heuristic
+
+The agent SHOULD activate CompText V5.0 when **any** of these conditions are met:
+
+1. **High token context** — The input context exceeds 500 tokens
+2. **Multi-agent handoff** — Data is passed between more than 2 agents
+3. **User requests efficiency** — The user explicitly asks for "efficiency", "low costs", or "token savings"
+4. **Batch operations** — Multiple commands are issued in a single request
+5. **Repetitive patterns** — The same command structure is used 3+ times in a session
+
+The agent SHOULD NOT activate CompText V5.0 when:
+
+- The input is a simple greeting or short question (e.g., "Hello", "How are you?")
+- The user is unfamiliar with CompText and needs natural language responses
+- The context is already below 50 tokens
+
 ## When to Use
 
 Use for token optimization and cost analysis:
