@@ -20,7 +20,7 @@ B:[CMD1;LANG:TASK]|[CMD2;LANG:TASK]|[CMD3:TASK]
 |---------|--------|-------------|
 | Batch prefix | `B:` | Marks the string as a batch |
 | Command wrapper | `[...]` | Wraps each individual command |
-| Separator | `\|` | Separates commands in the batch |
+| Separator | `|` | Separates commands in the batch |
 
 ## Building a Batch
 

@@ -56,8 +56,12 @@ Use these canonical examples for consistent benchmarking:
 |------|-----------------|-------------|-----------|
 | Simple code | "Write Python Fibonacci" | `C;P:FIB` | 83.3% |
 | Test generation | "Generate unit tests for Fibonacci" | `T;P:FIB` | 92.3% |
-| Batch workflow | "Code, test, and document Fibonacci" | `B:[C;P:FIB]\|[T;P:FIB]\|[D:FIB]` | 91.7% |
-| Complex pipeline | "Analyze, fix memory, optimize SQL, document API" | `B:[A:STRUCT]\|[F;T:MEM]\|[O;S:Q]\|[D:API]` | 93.3% |
+| Batch workflow | "Code, test, and document Fibonacci" | See below | 91.7% |
+| Complex pipeline | "Analyze, fix memory, optimize SQL, document API" | See below | 93.3% |
+
+**Batch workflow:** `B:[C;P:FIB]|[T;P:FIB]|[D:FIB]`
+
+**Complex pipeline:** `B:[A:STRUCT]|[F;T:MEM]|[O;S:Q]|[D:API]`
 
 ## Tips
 
